@@ -1,0 +1,30 @@
+{
+  "exclude": ["node_modules"],
+  "files": ["./agent.ts"],
+  "types": ["chrome"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "isolatedModules": false,
+    "outDir": "../",
+    "noEmit": false,
+    "declarationMap": false,
+    "declaration": false,
+    "sourceMap": false,
+    "incremental": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": false,
+    "module": "None",
+    "resolveJsonModule": false,
+    "inlineSources": false,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "importsNotUsedAsValues": "error"
+  }
+}

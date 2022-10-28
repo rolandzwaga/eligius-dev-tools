@@ -1,0 +1,53 @@
+{
+  "name": "eligius-dev-tools",
+  "displayName": "Eligius dev tools",
+  "version": "0.1.0",
+  "description": "Diagnostics for the Eligius engine.",
+  "author": "rolandzwaga",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn agent && plasmo dev",
+    "build": "yarn agent && plasmo build",
+    "clean": "npx rimraf build",
+    "sanitize-agent": "node sanitize-agent",
+    "agent": "tsc --project ./src-agent/tsconfig.json && yarn sanitize-agent"
+  },
+  "dependencies": {
+    "eligius": "1.0.8",
+    "rc-dialog": "9.0.0",
+    "rc-tree": "5.7.0",
+    "react": "18.2.0",
+    "react-base-table": "1.13.2",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@plasmohq/prettier-plugin-sort-imports": "3.5.4",
+    "@types/chrome": "0.0.199",
+    "@types/node": "18.11.6",
+    "@types/react": "18.0.23",
+    "@types/react-dom": "18.0.7",
+    "plasmo": "0.57.2",
+    "prettier": "2.7.1",
+    "typescript": "4.8.4"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*",
+      "file://*/*"
+    ],
+    "permissions": [
+      "scripting",
+      "notifications"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "~agent.js"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ]
+  }
+}

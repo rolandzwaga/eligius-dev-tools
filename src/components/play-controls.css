@@ -1,0 +1,26 @@
+.playControlsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.playControlsContainer button {
+    border: 1px solid grey;
+    background-color: lightgrey;
+    border-radius: 4px;
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.playControlsContainer button:hover {
+    border: 1px solid black;
+    background-color: #ff0099;
+}
+
+.playControlsContainer button:active {
+    border: 1px solid black;
+    background-color: #ff00dd;
+}
