@@ -13,9 +13,9 @@
     "agent": "tsc --project ./src-agent/tsconfig.json && yarn sanitize-agent"
   },
   "dependencies": {
-    "eligius": "1.0.8",
-    "rc-dialog": "9.0.0",
-    "rc-tree": "5.7.0",
+    "eligius": "1.1.2",
+    "rc-dialog": "9.0.2",
+    "rc-tree": "5.7.2",
     "react": "18.2.0",
     "react-base-table": "1.13.2",
     "react-dom": "18.2.0"
@@ -26,7 +26,7 @@
     "@types/node": "18.11.6",
     "@types/react": "18.0.23",
     "@types/react-dom": "18.0.7",
-    "plasmo": "0.57.2",
+    "plasmo": "0.65.0",
     "prettier": "2.7.1",
     "typescript": "4.8.4"
   },
